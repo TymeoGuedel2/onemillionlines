@@ -1,0 +1,252 @@
+/* custom.css */
+
+/* General styles */
+body {
+    font-family: 'Arvo', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1, h2, h3 {
+    margin: 0 0 20px;
+  }
+  
+  p {
+    margin: 0 0 15px;
+  }
+  
+  a {
+    color: #E74C3C;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #333;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav .logo a {
+    font-size: 1.5em;
+    color: #fff;
+  }
+  
+  nav .menu a {
+    color: #fff;
+    margin: 0 15px;
+  }
+  
+  nav .menu a:hover {
+    color: #E74C3C;
+  }
+  
+  /* Jumbotron */
+  .jumbotron {
+    background: url('../images/hero-image.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 100px 0 150px;
+    text-align: center;
+  }
+  h1 {
+    font-family: 'Glyphicons Halflings', sans-serif; /* Utiliser la police pour les titres */
+    font-size: 2.5em;
+  }
+  
+  #who h2, #get-involved h2 {
+    font-family: 'Glyphicons Halflings', sans-serif; /* Appliquer la même police pour les sous-titres */
+    font-size: 2em;
+    color: #E74C3C; /* Orange pour le sous-titre */
+    text-decoration: underline;
+  }
+  
+  p {
+    font-family: 'Arvo', serif; /* Utiliser la police Arvo pour les paragraphes si déjà incluse */
+    font-size: 1em;
+  }
+
+  .code-image {
+    display: block; /* Assure que l'image occupe une ligne complète */
+    margin: 40px auto 0; /* Ajuste la marge supérieure pour descendre l'image */
+    max-width: 100px; /* Ajuste la taille de l'image si nécessaire */
+  }
+  
+  .jumbotron h1 {
+    font-size: 2.5em;
+    line-height: 1.2;
+  }
+  
+  .jumbotron p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .jumbotron .btn {
+    background-color: #E74C3C;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .jumbotron .btn:hover {
+    background-color: #E74C3C;
+  }
+  
+  /* Sections */
+  #who, #get-involved {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  #who h2, #get-involved h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+  
+  #who p {
+    font-size: 1em;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .involvement-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .option {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1 1 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #who h2 {
+    color: #E74C3C; /* Couleur orange */
+    text-decoration: underline; /* Pour souligner le texte */
+    font-size: 2em; /* Ajuste la taille selon ton besoin */
+    margin: 20px 0;
+  }
+
+  .highlight-orange {
+    color: #E74C3C; /* Couleur orange */
+  }
+  
+  .option h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  .option p {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+  }
+  
+  .option .btn {
+    background-color: #E74C3C;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  .option .btn:hover {
+    background-color: #E74C3C;
+  }
+  
+  .option i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #E74C3C;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #E74C3C;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Back to top button */
+  #back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+  }
+  
+  #back-to-top a {
+    background-color: #E74C3C;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50%;
+    display: block;
+  }
+  
+  #back-to-top a:hover {
+    background-color: #E74C3C;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 767px) {
+    nav .menu {
+      display: none;
+    }
+  
+    nav .logo {
+      text-align: center;
+      width: 100%;
+    }
+  
+    #who, #get-involved {
+      padding: 40px 0;
+    }
+  
+    .involvement-options {
+      flex-direction: column;
+    }
+  
+    .jumbotron {
+      padding: 80px 20px;
+    }
+  
+    .jumbotron h1 {
+      font-size: 2em;
+    }
+  
+    #back-to-top {
+      display: block;
+    }
+  }
+  
